@@ -1,21 +1,23 @@
 if ($) {
-  var bg = '#303e4d'
-  var bgDark = '#212b35'
-  var text = '#acb2b8'
-  var link = '#dadada!important'
+	console.log("test 1 ---------------------------------------");
+  var bg = '#21252b'
+  var bgDark = '#111417'
+  var text = '#9da5b4'
+  var link = '#9da5b4!important'
   var button = 'none!important'
   var highlight = '#8c7208'
+  var border = '#1c1f25'
   var accent = '#bd6542'
   $("<style type='text/css'>" +
   'body{background: ' + bg + ';}' +
   '.p-channel_sidebar__channel.p-channel_sidebar__channel--unread, .comment .mention, .ql-editor .mention, ts-message .mention{background: ' + accent + ';}' +
   '.btn_outline{background: ' + accent + '!important; color: ' + link + '}' +
-  '#col_flex{background: ' + bg + ';}' +
-  'ts-icon{color: ' + accent + ';}' +
+  '#col_flex, .client_channels_list_container, .p-channel_sidebar{background: ' + bg + '!important;}' +
+  '.ts_icon_close_filled{color: ' + accent + ';}' +
   '.feature_sli_file_search #search_results.all, .feature_sli_file_search #search_results.messages, .feature_sli_file_search #search_results.all .search_message_result, .feature_sli_file_search #search_results.messages .search_message_result{background: ' + bg + ';}' +
   '.feature_sli_file_search #search_results.all .top_search_results .search_message_result, .ql-container.texty_single_line_input, .menu .section_header .header_label{background: ' + 'none' + ';}' +
   '.message_body, #flex_contents .heading_text, #im_title, .ts_icon, .comment, .modal label, h1, h2, h3, h4, h5, h6, #select_share_channels .lazy_filter_select .lfs_item{color: ' + text + ';}' +
-  '.search_result_with_extract, .supports_custom_scrollbar .team_menu.slack_menu .menu_content, .menu{background: ' + bgDark + ';}' +
+  '.search_result_with_extract, .supports_custom_scrollbar .team_menu.slack_menu .menu_content, .menu, .menu_content{background: ' + bgDark + '!important;}' +
   'span.match{background: ' + highlight + ';}' +
   '.light_theme ts-message .message_content .message_sender{color: ' + 'white' + '!important;}' +
   '#channel_topic_text{background: ' + bg + ';}' +
@@ -38,6 +40,7 @@ if ($) {
   '.supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-track{background: ' + bg + ';}' +
   '.supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-track{color: ' + bg + ';}' +
   '.ql-placeholder{color: ' + link + '; filter: none; opacity: 1;}' +
+  '.channel_header, #col_messages, #footer{box-shadow: inset 1px 0 0 0 '+ border +';}' +
   '</style>').appendTo('head')
 } else {
   alert('no jq')
