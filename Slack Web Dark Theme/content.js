@@ -41,6 +41,7 @@ if ($) {
   '.supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div::-webkit-scrollbar-track, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-thumb, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div::-webkit-scrollbar-track{color: ' + bg + ';}' +
   '.ql-placeholder{color: ' + link + '; filter: none; opacity: 1;}' +
   '.channel_header, #col_messages, #footer{box-shadow: inset 1px 0 0 0 '+ border +';}' +
+  '.p-channel_sidebar__badge{color: white!important;}' +
   '</style>').appendTo('head')
 } else {
   alert('no jq')
